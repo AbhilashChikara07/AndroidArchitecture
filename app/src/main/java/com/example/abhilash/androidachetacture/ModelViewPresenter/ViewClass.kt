@@ -18,7 +18,7 @@ class ViewClass : AppCompatActivity(), PresenterClass.ViewInterface {
         setContentView(R.layout.activity_main)
 
         mPresenterClassObj = PresenterClass(this)
-        mPresenterClassObj!!.makeServerCommunication(this, "")
+        mPresenterClassObj!!.makeServerCommunication(ViewClass.this, "")
         initlizeData()
     }
 
